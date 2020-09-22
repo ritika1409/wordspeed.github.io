@@ -1,0 +1,58 @@
+:root {
+  --mainPink: #eec5d2;
+  --mainWhite: #ecf0f1;
+  --mainBlack:rgb(0, 0, 0);
+  --mainBlue:#63c5da;
+  --mainGrey:rgba(114, 106, 106, 0.5);
+  --mainDarkBlue:#34495e;
+}
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: content-box;
+}
+.mainDiv{
+    width: 100%;
+    height:100vh;
+    position: relative;
+    background:var(--mainPink);
+}
+.centerDiv{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+
+}
+h1{
+    text-transform: capitalize;
+    margin-top: 30px;
+    color:var(--mainWhite);
+    text-shadow: 1px 2px 3px var(--mainBlue);
+    font-size: 2.1rem;
+}
+h2{
+    text-align: center;
+}
+textarea{
+    background-color:var(--mainGrey);
+    box-shadow: 0 0  1px rgba(0,0,0,0.2);
+    border-radius:10px 10px 0 0;
+    border:20px solid var(--mainDarkBlue);
+    color:var(--mainWhite);
+    font-size:1.3rem;
+}
+.mainbtn{
+    margin-top:5px;
+    padding: 10px 20px;
+    border-radius:0px;
+    border:2px solid var(--mainBlack);
+    background:var(--mainWhite);
+    color:var(--mainBlack);
+    font-size:1rem;
+}
+.mainbtn:hover{
+    color:var(--mainBlack);
+    background-color: var(--mainGrey);
+}
